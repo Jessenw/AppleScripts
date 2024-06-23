@@ -1,13 +1,12 @@
 -- Things to Flow
 -- Jesse Williams (github.com/Jessenw)
 
--- When executed, this script allows the user to select a todo from a specified list (default is "Today"). 
--- The script will then apply a tag to the selected todo (default is "Now") and then start a flow with the
--- name of the selected todo.
+-- This script lets the user select a todo from the 'Today' list
+-- applies a tag to it, then starts a flow with the todo's name.
 
 -- Main script
 on run
-	set tagName to "Now"
+	set tagName to "Current flow"
 	set listName to "Today"
 	
 	set todos to getTodos(listName)
